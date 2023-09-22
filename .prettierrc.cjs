@@ -14,8 +14,8 @@ const config = {
   endOfLine: 'auto',
   useTabs: true,
   plugins: [
-    '@ianvs/prettier-plugin-sort-imports',
-    'prettier-plugin-tailwindcss',
+    require.resolve('@ianvs/prettier-plugin-sort-imports'),
+    require.resolve('prettier-plugin-tailwindcss'),
   ],
   importOrder: [
     '<BUILT_IN_MODULES>|^vite$',
